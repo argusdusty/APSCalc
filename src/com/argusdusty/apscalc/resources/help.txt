@@ -1,0 +1,9 @@
+Exp. The Exponential Function. Called with exp(x). Equivalent to e^x. exp(2) = e^2. exp(1.2) = 3.32012. exp(ln(x)) = x
+Fact. The Factorial Function. Called with fact(x). Equivalent to x!. fact(2) = 2. fact(4) = 24. fact(x) = x!
+Factor. The Factorization Function. Called with factor(x). Represents x in terms of its prime factors. factor(2) = 2. factor(6) = 2*3. factor(6/5) = 2*3/5
+Gamma. The Gamma Function. Called with gamma(x). Equivalent to (x-1)!. gamma(2) = 1. gamma(4) = 6. gamma(4.5) = 11.6317. gamma(-1.1) = 9.71481
+Gcd. The Greatest Common Denominator Function. Called with gcd(x, y). Calculates the largest number z such that x and y are both divisible by z. gcd(2, 4) = 2. gcd(4/3, 2) = 2/3. gcd(1.2, 4.2) = 0.6
+Lcm. The Least Common Multiple Function. Called with lcm(x, y). Equivalent to x*y/gcd(x, y). lcm(2, 4) = 4. lcm(4/3, 2) = 4. lcm(1.2, 4.2) = 8.4
+Ln. The Natural Logarithm Function. Called with ln(x). Solves the equation e^a=x for a. ln(4) = 2*ln(2). ln(e) = 1. ln(1.2) = 0.182322
+Log. The Logarithm Function. Called with log(x, y). Solves the Equation y^a=x for a, and is equivalent to ln(x)/ln(y). log(2^4, 2) = 4. log(x^2.1, x) = 2.1. log(2.1, 4.3) = 0.508659
+Mod. The Modulo Function. Called with mod(x, y). (Mostly) equivalent to the remainder of x / y. mod(27, 5) = 2. mod(4.3, 2.1) = 0.1. mod(Pi, e) = Pi-e

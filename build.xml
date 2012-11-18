@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="release" name="Create Runnable Jar for Project S_Calc with Jar-in-Jar Loader">
+	<property name="build.sysclasspath" value="last" />
+	<target name="release" depends="compile">
+		<jar destfile="release/APSCalc.jar">
+			<manifest>
+				<attribute name="Main-Class" value="com.argusdusty.apscalc.APSCalc"/>
+				<attribute name="Class-Path" value="."/>
+			</manifest>
+			<fileset dir="bin"/>
+		</jar>
+		<copy file="README.txt" tofile="release/README.txt"/>
+		<copy file="APSCalc.bat" todir="release"/>
+	</target>
+	<target name="compile">
+		<delete dir="bin" />
+		<delete dir = "release" />
+		<mkdir dir="bin" />
+		<copy todir="bin" includeemptydirs="false">
+			<fileset dir="src" excludes="**/*.java" />
+		</copy>
+		<javac srcdir="src" destdir="bin">
+		</javac>
+	</target>
+</project>
